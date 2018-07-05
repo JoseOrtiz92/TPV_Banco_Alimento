@@ -1,0 +1,351 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TPV
+</name>
+</assembly>
+<members>
+<member name="T:TPV.dsAlbaran">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:TPV.dsAlbaran.albaranDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:TPV.dsAlbaran.albaranRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:TPV.dsAlbaran.albaranRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:TPV.dsAlbaranTableAdapters.albaranTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:TPV.dsAlbaranTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:TPV.dsAlbaranTableAdapters.TableAdapterManager.UpdateUpdatedRows(TPV.dsAlbaran,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:TPV.dsAlbaranTableAdapters.TableAdapterManager.UpdateInsertedRows(TPV.dsAlbaran,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:TPV.dsAlbaranTableAdapters.TableAdapterManager.UpdateDeletedRows(TPV.dsAlbaran,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:TPV.dsAlbaranTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:TPV.dsAlbaranTableAdapters.TableAdapterManager.UpdateAll(TPV.dsAlbaran)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:TPV.dsAlbaranTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:TPV.dsAlbaranTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:TPV.dsGraficoEntrada">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:TPV.dsGraficoEntrada.graficoentradaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:TPV.dsGraficoEntrada.graficoentradaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:TPV.dsGraficoEntrada.graficoentradaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:TPV.dsGraficoEntradaTableAdapters.graficoentradaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:TPV.dsGraficoEntradaTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:TPV.dsGraficoEntradaTableAdapters.TableAdapterManager.UpdateUpdatedRows(TPV.dsGraficoEntrada,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:TPV.dsGraficoEntradaTableAdapters.TableAdapterManager.UpdateInsertedRows(TPV.dsGraficoEntrada,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:TPV.dsGraficoEntradaTableAdapters.TableAdapterManager.UpdateDeletedRows(TPV.dsGraficoEntrada,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:TPV.dsGraficoEntradaTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:TPV.dsGraficoEntradaTableAdapters.TableAdapterManager.UpdateAll(TPV.dsGraficoEntrada)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:TPV.dsGraficoEntradaTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:TPV.dsGraficoEntradaTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:TPV.dsGraficoSalida">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:TPV.dsGraficoSalida.graficosalidaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:TPV.dsGraficoSalida.graficosalidaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:TPV.dsGraficoSalida.graficosalidaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:TPV.dsGraficoSalidaTableAdapters.graficosalidaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:TPV.dsGraficoSalidaTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:TPV.dsGraficoSalidaTableAdapters.TableAdapterManager.UpdateUpdatedRows(TPV.dsGraficoSalida,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:TPV.dsGraficoSalidaTableAdapters.TableAdapterManager.UpdateInsertedRows(TPV.dsGraficoSalida,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:TPV.dsGraficoSalidaTableAdapters.TableAdapterManager.UpdateDeletedRows(TPV.dsGraficoSalida,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:TPV.dsGraficoSalidaTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:TPV.dsGraficoSalidaTableAdapters.TableAdapterManager.UpdateAll(TPV.dsGraficoSalida)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:TPV.dsGraficoSalidaTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:TPV.dsGraficoSalidaTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:TPV.dsInformeEntradaFecha">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:TPV.dsInformeEntradaFecha.informe_entrada_por_fechaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:TPV.dsInformeEntradaFecha.informe_entrada_por_fechaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:TPV.dsInformeEntradaFecha.informe_entrada_por_fechaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:TPV.dsInformeEntradaFechaTableAdapters.informe_entrada_por_fechaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:TPV.dsInformeEntradaFechaTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:TPV.dsInformeEntradaFechaTableAdapters.TableAdapterManager.UpdateUpdatedRows(TPV.dsInformeEntradaFecha,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:TPV.dsInformeEntradaFechaTableAdapters.TableAdapterManager.UpdateInsertedRows(TPV.dsInformeEntradaFecha,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:TPV.dsInformeEntradaFechaTableAdapters.TableAdapterManager.UpdateDeletedRows(TPV.dsInformeEntradaFecha,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:TPV.dsInformeEntradaFechaTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:TPV.dsInformeEntradaFechaTableAdapters.TableAdapterManager.UpdateAll(TPV.dsInformeEntradaFecha)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:TPV.dsInformeEntradaFechaTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:TPV.dsInformeEntradaFechaTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:TPV.dsInformeStock">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:TPV.dsInformeStock.informe_stockDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:TPV.dsInformeStock.informe_stockRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:TPV.dsInformeStock.informe_stockRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:TPV.dsInformeStockTableAdapters.informe_stockTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:TPV.dsInformeStockTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:TPV.dsInformeStockTableAdapters.TableAdapterManager.UpdateUpdatedRows(TPV.dsInformeStock,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:TPV.dsInformeStockTableAdapters.TableAdapterManager.UpdateInsertedRows(TPV.dsInformeStock,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:TPV.dsInformeStockTableAdapters.TableAdapterManager.UpdateDeletedRows(TPV.dsInformeStock,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:TPV.dsInformeStockTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:TPV.dsInformeStockTableAdapters.TableAdapterManager.UpdateAll(TPV.dsInformeStock)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:TPV.dsInformeStockTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:TPV.dsInformeStockTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:TPV.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TPV.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TPV.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>

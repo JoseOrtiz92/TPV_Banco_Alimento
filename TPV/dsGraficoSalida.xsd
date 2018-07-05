@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsGraficoSalida" targetNamespace="http://tempuri.org/dsGraficoSalida.xsd" xmlns:mstns="http://tempuri.org/dsGraficoSalida.xsd" xmlns="http://tempuri.org/dsGraficoSalida.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConexionTPV" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConexionTPV (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TPV.My.MySettings.GlobalReference.Default.ConexionTPV" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="graficosalidaTableAdapter" GeneratorDataComponentClassName="graficosalidaTableAdapter" Name="graficosalida" UserDataComponentName="graficosalidaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConexionTPV (MySettings)" DbObjectName="tpv.graficosalida" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `CANTIDAD`, `Fecha_Salida` FROM `tpv`.`graficosalida`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CANTIDAD" DataSetColumn="CANTIDAD" />
+              <Mapping SourceColumn="Fecha_Salida" DataSetColumn="Fecha_Salida" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsGraficoSalida" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsGraficoSalida" msprop:Generator_UserDSName="dsGraficoSalida">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="graficosalida" msprop:Generator_TableClassName="graficosalidaDataTable" msprop:Generator_TableVarName="tablegraficosalida" msprop:Generator_TablePropName="graficosalida" msprop:Generator_RowDeletingName="graficosalidaRowDeleting" msprop:Generator_RowChangingName="graficosalidaRowChanging" msprop:Generator_RowEvHandlerName="graficosalidaRowChangeEventHandler" msprop:Generator_RowDeletedName="graficosalidaRowDeleted" msprop:Generator_UserTableName="graficosalida" msprop:Generator_RowChangedName="graficosalidaRowChanged" msprop:Generator_RowEvArgName="graficosalidaRowChangeEvent" msprop:Generator_RowClassName="graficosalidaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CANTIDAD" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD" msprop:Generator_ColumnPropNameInRow="CANTIDAD" msprop:Generator_ColumnPropNameInTable="CANTIDADColumn" msprop:Generator_UserColumnName="CANTIDAD" type="xs:float" />
+              <xs:element name="Fecha_Salida" msprop:Generator_ColumnVarNameInTable="columnFecha_Salida" msprop:Generator_ColumnPropNameInRow="Fecha_Salida" msprop:Generator_ColumnPropNameInTable="Fecha_SalidaColumn" msprop:Generator_UserColumnName="Fecha_Salida">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
